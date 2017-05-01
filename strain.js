@@ -1,43 +1,46 @@
+//reading file1
 var fs = require('fs');
 
-var
-  remaining = "";
-  lineFeed = "\n",
-  lineNr = 0;
+fs.readFile('Desktop/array of numbers.txt', 'utf8', function(err, data) {  
+    if (err) throw err;
+    else;
+    return odd discard;
+    console.log(data);
+});
 
-fs.createReadStream('data.txt', { encoding: 'utf-8' })
-  .on('data', function (chunk) {
-    // store the actual chunk into the remaining
-    remaining = remaining.concat(chunk);
 
-    // look that we have a linefeed
-    var lastLineFeed = remaining.lastIndexOf(lineFeed);
+//reading file2 
+var fs = require('fs');
 
-    // if we don't have any we can continue the reading
-    if (lastLineFeed === -1) return;
+fs.readFile('Desktop/array of numbers2.txt', 'utf8', function(err, data) {  
+    if (err) throw err;
+    else;
+    return even keep;
+    console.log(data);
+});
 
-    var
-      current = remaining.substring(0, lastLineFeed),
-      lines = current.split(lineFeed);
 
-    // store from the last linefeed or empty it out
-    remaining = (lastLineFeed > remaining.length)
-      ? remaining.substring(lastLineFeed + 1, remaining.length)
-      : "";
 
-    for (var i = 0, length = lines.length; i < length; i++) {
-      // process the actual line
-      _processLine(lines[i], lineNr++);
-    }
-  })
-  .on('end', function (close) {
-    // TODO I'm not sure this is needed, it depends on your data
-    // process the reamining data if needed
-    if (remaining.length > 0) _processLine(remaining, lineNr);
-  });
 
-function _processLine(line, lineNumber) {
-  // UPDATE2 with parseFloat
-  var numbers = line.split(" ").map(function (item) { return parseFloat(item); });
-  console.log(numbers, lineNumber);
-}
+
+//Array of numbers to read
+var arrayOfNumbers = new Array['1', '2', '3', '4', '5', 
+                               '6', '7', '8', '9', '10',
+                                '11', '12', '13', '14', 
+                                '15', '16', '17', '18',
+                                '19', '20', '21', '22',
+                                '23', '24', '25'];
+
+
+
+//Array of numbers to read
+var arrayOfNumbers = new Array['1', '2', '3', '4', '5', 
+                               '6', '7', '8', '9', '10',
+                                '11', '12', '13', '14', 
+                                '15', '16', '17', '18',
+                                '19', '20', '21', '22',
+                                '23', '24', '25'];
+
+
+
+
