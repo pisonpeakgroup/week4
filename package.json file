@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "javascripting",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+"url": "https://github.com/pisonpeakgroup/week4/new/master"
+  },
+  "keywords": [
+    "calculator"
+  ],
+  "author": "joe",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.6.0"
+  },
+  "dependencies": {
+    "jasmine": "^2.6.0"
+  }
+}
